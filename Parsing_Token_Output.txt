@@ -1,0 +1,857 @@
+1:	Action: S_2
+ 	Stack: [0, int, 2]
+ 	Input Queue: [main, (, int, id, ,, char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+2:	Action: R_type_0
+ 	Stack: [0, type, 1]
+ 	Input Queue: [main, (, int, id, ,, char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+3:	Action: S_5
+ 	Stack: [0, type, 1, main, 5]
+ 	Input Queue: [(, int, id, ,, char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+4:	Action: S_6
+ 	Stack: [0, type, 1, main, 5, (, 6]
+ 	Input Queue: [int, id, ,, char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+5:	Action: S_2
+ 	Stack: [0, type, 1, main, 5, (, 6, int, 2]
+ 	Input Queue: [id, ,, char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+6:	Action: R_type_0
+ 	Stack: [0, type, 1, main, 5, (, 6, type, 8]
+ 	Input Queue: [id, ,, char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+7:	Action: S_11
+ 	Stack: [0, type, 1, main, 5, (, 6, type, 8, id, 11]
+ 	Input Queue: [,, char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+8:	Action: R_argument_0
+ 	Stack: [0, type, 1, main, 5, (, 6, argument, 7]
+ 	Input Queue: [,, char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+9:	Action: S_10
+ 	Stack: [0, type, 1, main, 5, (, 6, argument, 7, ,, 10]
+ 	Input Queue: [char, id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+10:	Action: S_4
+ 	Stack: [0, type, 1, main, 5, (, 6, argument, 7, ,, 10, char, 4]
+ 	Input Queue: [id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+11:	Action: R_type_1
+ 	Stack: [0, type, 1, main, 5, (, 6, argument, 7, ,, 10, type, 8]
+ 	Input Queue: [id, ), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+12:	Action: S_11
+ 	Stack: [0, type, 1, main, 5, (, 6, argument, 7, ,, 10, type, 8, id, 11]
+ 	Input Queue: [), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+13:	Action: R_argument_0
+ 	Stack: [0, type, 1, main, 5, (, 6, argument, 7, ,, 10, argument, 7]
+ 	Input Queue: [), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+14:	Action: R_arguments_1
+ 	Stack: [0, type, 1, main, 5, (, 6, argument, 7, ,, 10, arguments, 13]
+ 	Input Queue: [), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+15:	Action: R_arguments_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9]
+ 	Input Queue: [), {, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+16:	Action: S_12
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12]
+ 	Input Queue: [{, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+17:	Action: S_14
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14]
+ 	Input Queue: [int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+18:	Action: S_2
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, int, 2]
+ 	Input Queue: [id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+19:	Action: R_type_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15]
+ 	Input Queue: [id, =, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+20:	Action: S_39
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39]
+ 	Input Queue: [=, integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+21:	Action: S_63
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39, =, 63]
+ 	Input Queue: [integer_constant, ;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+22:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39, =, 63, integer_constant, 27]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+23:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39, =, 63, factor, 33]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+24:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39, =, 63, factor, 33, term', 55]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+25:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39, =, 63, term, 32]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+26:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39, =, 63, term, 32, expr', 50]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+27:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39, =, 63, expr, 84]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+28:	Action: S_97
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, type, 15, id, 39, =, 63, expr, 84, ;, 97]
+ 	Input Queue: [int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+29:	Action: R_assignmentStmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, assignmentStmt, 34]
+ 	Input Queue: [int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+30:	Action: R_stmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38]
+ 	Input Queue: [int, id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+31:	Action: S_2
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, int, 2]
+ 	Input Queue: [id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+32:	Action: R_type_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15]
+ 	Input Queue: [id, =, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+33:	Action: S_39
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39]
+ 	Input Queue: [=, integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+34:	Action: S_63
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39, =, 63]
+ 	Input Queue: [integer_constant, ;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+35:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39, =, 63, integer_constant, 27]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+36:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39, =, 63, factor, 33]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+37:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39, =, 63, factor, 33, term', 55]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+38:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39, =, 63, term, 32]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+39:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39, =, 63, term, 32, expr', 50]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+40:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39, =, 63, expr, 84]
+ 	Input Queue: [;, int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+41:	Action: S_97
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, type, 15, id, 39, =, 63, expr, 84, ;, 97]
+ 	Input Queue: [int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+42:	Action: R_assignmentStmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, assignmentStmt, 34]
+ 	Input Queue: [int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+43:	Action: R_stmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38]
+ 	Input Queue: [int, id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+44:	Action: S_2
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, int, 2]
+ 	Input Queue: [id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+45:	Action: R_type_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15]
+ 	Input Queue: [id, =, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+46:	Action: S_39
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39]
+ 	Input Queue: [=, integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+47:	Action: S_63
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39, =, 63]
+ 	Input Queue: [integer_constant, ;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+48:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, integer_constant, 27]
+ 	Input Queue: [;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+49:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, factor, 33]
+ 	Input Queue: [;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+50:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, factor, 33, term', 55]
+ 	Input Queue: [;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+51:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, term, 32]
+ 	Input Queue: [;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+52:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, term, 32, expr', 50]
+ 	Input Queue: [;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+53:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, expr, 84]
+ 	Input Queue: [;, char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+54:	Action: S_97
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, expr, 84, ;, 97]
+ 	Input Queue: [char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+55:	Action: R_assignmentStmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, assignmentStmt, 34]
+ 	Input Queue: [char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+56:	Action: R_stmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38]
+ 	Input Queue: [char, id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+57:	Action: S_4
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, char, 4]
+ 	Input Queue: [id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+58:	Action: R_type_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15]
+ 	Input Queue: [id, =, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+59:	Action: S_39
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39]
+ 	Input Queue: [=, char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+60:	Action: S_63
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, =, 63]
+ 	Input Queue: [char_constant, ;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+61:	Action: S_29
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, char_constant, 29]
+ 	Input Queue: [;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+62:	Action: R_factor_2
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, factor, 33]
+ 	Input Queue: [;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+63:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, factor, 33, term', 55]
+ 	Input Queue: [;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+64:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, term, 32]
+ 	Input Queue: [;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+65:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, term, 32, expr', 50]
+ 	Input Queue: [;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+66:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, expr, 84]
+ 	Input Queue: [;, char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+67:	Action: S_97
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, =, 63, expr, 84, ;, 97]
+ 	Input Queue: [char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+68:	Action: R_assignmentStmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, assignmentStmt, 34]
+ 	Input Queue: [char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+69:	Action: R_stmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38]
+ 	Input Queue: [char, id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+70:	Action: S_4
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, char, 4]
+ 	Input Queue: [id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+71:	Action: R_type_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15]
+ 	Input Queue: [id, [, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+72:	Action: S_39
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39]
+ 	Input Queue: [[, integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+73:	Action: S_64
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, [, 64]
+ 	Input Queue: [integer_constant, ], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+74:	Action: S_85
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, [, 64, integer_constant, 85]
+ 	Input Queue: [], =, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+75:	Action: S_98
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15, id, 39, [, 64, integer_constant, 85, ], 98]
+ 	Input Queue: [=, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+76:	Action: R_charArray_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15, charArray, 40]
+ 	Input Queue: [=, string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+77:	Action: S_65
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15, charArray, 40, =, 65]
+ 	Input Queue: [string_constant, ;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+78:	Action: S_86
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15, charArray, 40, =, 65, string_constant, 86]
+ 	Input Queue: [;, if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+79:	Action: S_99
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, type, 15, charArray, 40, =, 65, string_constant, 86, ;, 99]
+ 	Input Queue: [if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+80:	Action: R_charassignmentStmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, charassignmentStmt, 26]
+ 	Input Queue: [if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+81:	Action: R_stmt_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38]
+ 	Input Queue: [if, (, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+82:	Action: S_19
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19]
+ 	Input Queue: [(, id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+83:	Action: S_44
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44]
+ 	Input Queue: [id, >, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+84:	Action: S_41
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, id, 41]
+ 	Input Queue: [>, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+85:	Action: R_factor_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, factor, 33]
+ 	Input Queue: [>, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+86:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, factor, 33, term', 55]
+ 	Input Queue: [>, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+87:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32]
+ 	Input Queue: [>, integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+88:	Action: S_53
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32, >, 53]
+ 	Input Queue: [integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+89:	Action: R_relop_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32, relop, 54]
+ 	Input Queue: [integer_constant, ), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+90:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32, relop, 54, integer_constant, 27]
+ 	Input Queue: [), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+91:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32, relop, 54, factor, 33]
+ 	Input Queue: [), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+92:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32, relop, 54, factor, 33, term', 55]
+ 	Input Queue: [), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+93:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32, relop, 54, term, 81]
+ 	Input Queue: [), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+94:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32, relop, 54, term, 81, expr', 95]
+ 	Input Queue: [), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+95:	Action: R_expr'_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, term, 32, expr', 50]
+ 	Input Queue: [), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+96:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76]
+ 	Input Queue: [), {, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+97:	Action: S_92
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92]
+ 	Input Queue: [{, id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+98:	Action: S_102
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102]
+ 	Input Queue: [id, =, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+99:	Action: S_17
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17]
+ 	Input Queue: [=, integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+100:	Action: S_43
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17, =, 43]
+ 	Input Queue: [integer_constant, ;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+101:	Action: S_70
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17, =, 43, integer_constant, 70]
+ 	Input Queue: [;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+102:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17, =, 43, factor, 74]
+ 	Input Queue: [;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+103:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17, =, 43, factor, 74, term', 91]
+ 	Input Queue: [;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+104:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17, =, 43, term, 73]
+ 	Input Queue: [;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+105:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17, =, 43, term, 73, expr', 90]
+ 	Input Queue: [;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+106:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17, =, 43, expr, 72]
+ 	Input Queue: [;, }, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+107:	Action: S_89
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, id, 17, =, 43, expr, 72, ;, 89]
+ 	Input Queue: [}, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+108:	Action: R_assignmentStmt_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, assignmentStmt, 34]
+ 	Input Queue: [}, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+109:	Action: R_stmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmt, 38]
+ 	Input Queue: [}, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+110:	Action: R_stmts_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105]
+ 	Input Queue: [}, else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+111:	Action: S_108
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108]
+ 	Input Queue: [else, {, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+112:	Action: S_110
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110]
+ 	Input Queue: [{, id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+113:	Action: S_112
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112]
+ 	Input Queue: [id, =, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+114:	Action: S_17
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17]
+ 	Input Queue: [=, integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+115:	Action: S_43
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43]
+ 	Input Queue: [integer_constant, ^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+116:	Action: S_70
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, integer_constant, 70]
+ 	Input Queue: [^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+117:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, factor, 74]
+ 	Input Queue: [^, integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+118:	Action: S_59
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, factor, 74, ^, 59]
+ 	Input Queue: [integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+119:	Action: R_arithop_3
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, factor, 74, arithop, 60]
+ 	Input Queue: [integer_constant, ;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+120:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, factor, 74, arithop, 60, integer_constant, 27]
+ 	Input Queue: [;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+121:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, factor, 74, arithop, 60, factor, 82]
+ 	Input Queue: [;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+122:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, factor, 74, arithop, 60, factor, 82, term', 96]
+ 	Input Queue: [;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+123:	Action: R_term'_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, factor, 74, term', 91]
+ 	Input Queue: [;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+124:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, term, 73]
+ 	Input Queue: [;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+125:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, term, 73, expr', 90]
+ 	Input Queue: [;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+126:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, expr, 72]
+ 	Input Queue: [;, }, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+127:	Action: S_89
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, id, 17, =, 43, expr, 72, ;, 89]
+ 	Input Queue: [}, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+128:	Action: R_assignmentStmt_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, assignmentStmt, 34]
+ 	Input Queue: [}, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+129:	Action: R_stmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, stmt, 38]
+ 	Input Queue: [}, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+130:	Action: R_stmts_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, stmts, 114]
+ 	Input Queue: [}, for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+131:	Action: S_116
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, if, 19, (, 44, expr, 76, ), 92, {, 102, stmts, 105, }, 108, else, 110, {, 112, stmts, 114, }, 116]
+ 	Input Queue: [for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+132:	Action: R_ifStmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, ifStmt, 36]
+ 	Input Queue: [for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+133:	Action: R_stmt_7
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38]
+ 	Input Queue: [for, (, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+134:	Action: S_28
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28]
+ 	Input Queue: [(, id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+135:	Action: S_47
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47]
+ 	Input Queue: [id, =, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+136:	Action: S_78
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78]
+ 	Input Queue: [=, integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+137:	Action: S_93
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93]
+ 	Input Queue: [integer_constant, ;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+138:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, integer_constant, 27]
+ 	Input Queue: [;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+139:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, factor, 33]
+ 	Input Queue: [;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+140:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, factor, 33, term', 55]
+ 	Input Queue: [;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+141:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, term, 32]
+ 	Input Queue: [;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+142:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, term, 32, expr', 50]
+ 	Input Queue: [;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+143:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103]
+ 	Input Queue: [;, id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+144:	Action: S_106
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106]
+ 	Input Queue: [id, <, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+145:	Action: S_41
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, id, 41]
+ 	Input Queue: [<, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+146:	Action: R_factor_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, factor, 33]
+ 	Input Queue: [<, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+147:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, factor, 33, term', 55]
+ 	Input Queue: [<, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+148:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32]
+ 	Input Queue: [<, integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+149:	Action: S_52
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32, <, 52]
+ 	Input Queue: [integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+150:	Action: R_relop_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32, relop, 54]
+ 	Input Queue: [integer_constant, ;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+151:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32, relop, 54, integer_constant, 27]
+ 	Input Queue: [;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+152:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32, relop, 54, factor, 33]
+ 	Input Queue: [;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+153:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32, relop, 54, factor, 33, term', 55]
+ 	Input Queue: [;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+154:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32, relop, 54, term, 81]
+ 	Input Queue: [;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+155:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32, relop, 54, term, 81, expr', 95]
+ 	Input Queue: [;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+156:	Action: R_expr'_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, term, 32, expr', 50]
+ 	Input Queue: [;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+157:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109]
+ 	Input Queue: [;, id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+158:	Action: S_111
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111]
+ 	Input Queue: [id, =, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+159:	Action: S_113
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113]
+ 	Input Queue: [=, id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+160:	Action: S_115
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115]
+ 	Input Queue: [id, +, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+161:	Action: S_41
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, id, 41]
+ 	Input Queue: [+, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+162:	Action: R_factor_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, factor, 33]
+ 	Input Queue: [+, integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+163:	Action: S_57
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, factor, 33, +, 57]
+ 	Input Queue: [integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+164:	Action: R_arithop_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, factor, 33, arithop, 60]
+ 	Input Queue: [integer_constant, ), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+165:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, factor, 33, arithop, 60, integer_constant, 27]
+ 	Input Queue: [), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+166:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, factor, 33, arithop, 60, factor, 82]
+ 	Input Queue: [), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+167:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, factor, 33, arithop, 60, factor, 82, term', 96]
+ 	Input Queue: [), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+168:	Action: R_term'_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, factor, 33, term', 55]
+ 	Input Queue: [), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+169:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, term, 32]
+ 	Input Queue: [), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+170:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, term, 32, expr', 50]
+ 	Input Queue: [), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+171:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117]
+ 	Input Queue: [), {, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+172:	Action: S_118
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118]
+ 	Input Queue: [{, id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+173:	Action: S_119
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119]
+ 	Input Queue: [id, =, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+174:	Action: S_17
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17]
+ 	Input Queue: [=, id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+175:	Action: S_43
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43]
+ 	Input Queue: [id, +, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+176:	Action: S_67
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, id, 67]
+ 	Input Queue: [+, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+177:	Action: R_factor_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, factor, 74]
+ 	Input Queue: [+, integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+178:	Action: S_57
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, factor, 74, +, 57]
+ 	Input Queue: [integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+179:	Action: R_arithop_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, factor, 74, arithop, 60]
+ 	Input Queue: [integer_constant, ;, }, id, =, integer_constant, ;, }, $]
+
+180:	Action: S_27
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, factor, 74, arithop, 60, integer_constant, 27]
+ 	Input Queue: [;, }, id, =, integer_constant, ;, }, $]
+
+181:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, factor, 74, arithop, 60, factor, 82]
+ 	Input Queue: [;, }, id, =, integer_constant, ;, }, $]
+
+182:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, factor, 74, arithop, 60, factor, 82, term', 96]
+ 	Input Queue: [;, }, id, =, integer_constant, ;, }, $]
+
+183:	Action: R_term'_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, factor, 74, term', 91]
+ 	Input Queue: [;, }, id, =, integer_constant, ;, }, $]
+
+184:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, term, 73]
+ 	Input Queue: [;, }, id, =, integer_constant, ;, }, $]
+
+185:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, term, 73, expr', 90]
+ 	Input Queue: [;, }, id, =, integer_constant, ;, }, $]
+
+186:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, expr, 72]
+ 	Input Queue: [;, }, id, =, integer_constant, ;, }, $]
+
+187:	Action: S_89
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, id, 17, =, 43, expr, 72, ;, 89]
+ 	Input Queue: [}, id, =, integer_constant, ;, }, $]
+
+188:	Action: R_assignmentStmt_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, assignmentStmt, 34]
+ 	Input Queue: [}, id, =, integer_constant, ;, }, $]
+
+189:	Action: R_stmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, stmt, 38]
+ 	Input Queue: [}, id, =, integer_constant, ;, }, $]
+
+190:	Action: R_stmts_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, stmts, 120]
+ 	Input Queue: [}, id, =, integer_constant, ;, }, $]
+
+191:	Action: S_121
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, for, 28, (, 47, id, 78, =, 93, expr, 103, ;, 106, expr, 109, ;, 111, id, 113, =, 115, expr, 117, ), 118, {, 119, stmts, 120, }, 121]
+ 	Input Queue: [id, =, integer_constant, ;, }, $]
+
+192:	Action: R_forLoop_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, forLoop, 20]
+ 	Input Queue: [id, =, integer_constant, ;, }, $]
+
+193:	Action: R_stmt_6
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38]
+ 	Input Queue: [id, =, integer_constant, ;, }, $]
+
+194:	Action: S_17
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17]
+ 	Input Queue: [=, integer_constant, ;, }, $]
+
+195:	Action: S_43
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17, =, 43]
+ 	Input Queue: [integer_constant, ;, }, $]
+
+196:	Action: S_70
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17, =, 43, integer_constant, 70]
+ 	Input Queue: [;, }, $]
+
+197:	Action: R_factor_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17, =, 43, factor, 74]
+ 	Input Queue: [;, }, $]
+
+198:	Action: R_term'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17, =, 43, factor, 74, term', 91]
+ 	Input Queue: [;, }, $]
+
+199:	Action: R_term_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17, =, 43, term, 73]
+ 	Input Queue: [;, }, $]
+
+200:	Action: R_expr'_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17, =, 43, term, 73, expr', 90]
+ 	Input Queue: [;, }, $]
+
+201:	Action: R_expr_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17, =, 43, expr, 72]
+ 	Input Queue: [;, }, $]
+
+202:	Action: S_89
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, id, 17, =, 43, expr, 72, ;, 89]
+ 	Input Queue: [}, $]
+
+203:	Action: R_assignmentStmt_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, assignmentStmt, 34]
+ 	Input Queue: [}, $]
+
+204:	Action: R_stmt_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38]
+ 	Input Queue: [}, $]
+
+205:	Action: R_stmts_1
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmts, 62]
+ 	Input Queue: [}, $]
+
+206:	Action: R_stmts_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmts, 62]
+ 	Input Queue: [}, $]
+
+207:	Action: R_stmts_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmts, 62]
+ 	Input Queue: [}, $]
+
+208:	Action: R_stmts_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmt, 38, stmts, 62]
+ 	Input Queue: [}, $]
+
+209:	Action: R_stmts_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmt, 38, stmts, 62]
+ 	Input Queue: [}, $]
+
+210:	Action: R_stmts_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmt, 38, stmts, 62]
+ 	Input Queue: [}, $]
+
+211:	Action: R_stmts_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmt, 38, stmts, 62]
+ 	Input Queue: [}, $]
+
+212:	Action: R_stmts_0
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmts, 21]
+ 	Input Queue: [}, $]
+
+213:	Action: S_45
+ 	Stack: [0, type, 1, main, 5, (, 6, arguments, 9, ), 12, {, 14, stmts, 21, }, 45]
+ 	Input Queue: [$]
+
+214:	Action: R_prog_0
+ 	Stack: [0, prog, 3]
+ 	Input Queue: [$]
+
+Accepted

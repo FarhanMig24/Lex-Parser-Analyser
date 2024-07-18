@@ -1,0 +1,21 @@
+prog -> type main ( arguments ) { stmts }
+type -> int | char
+stmts -> stmt stmts | stmt 
+stmt -> assignmentStmt | charassignmentStmt | returnStmt | conditionalStmt | getStmt | putStmt | forLoop | ifStmt | { stmts }
+assignmentStmt -> type id = expr ; | id = expr ;
+charassignmentStmt -> type charArray = string_constant ; 
+conditionalStmt -> id = conditionalStmt | expr ? expr : expr ;
+getStmt -> get id ;
+putStmt -> put expr ;
+forLoop -> for ( id = expr ; expr ; id = expr ) { stmts }
+ifStmt -> if ( expr ) { stmts } else { stmts }
+argument -> type id
+arguments -> argument , arguments | argument | EPSILON
+arithop -> + | - | * | ^
+relop -> < | > | ==
+expr -> term expr'
+expr' -> relop term expr' | EPSILON
+term -> factor term'
+term' -> arithop factor term' | EPSILON
+factor -> id | integer_constant | char_constant | string_constant | ( expr ) 
+charArray -> id [ integer_constant ]

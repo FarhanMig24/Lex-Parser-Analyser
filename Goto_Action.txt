@@ -1,0 +1,1489 @@
+goto(0,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(0,type)   =>   I1{ prog -> type . main ( arguments ) { stmts }  # 
+			}
+
+goto(0,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(0,prog)   =>   I3{ prog' -> prog .  # 
+			}
+
+goto(1,main)   =>   I5{ prog -> type main . ( arguments ) { stmts }  # 
+			}
+
+goto(5,()   =>   I6{ argument -> . type id  # 
+			arguments -> . argument , arguments  # arguments -> . argument  # arguments -> .  # 
+			type -> . int  # type -> . char  # 
+			prog -> type main ( . arguments ) { stmts }  # 
+			}
+
+goto(6,argument)   =>   I7{ arguments -> argument . , arguments  # arguments -> argument .  # 
+			}
+
+goto(6,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(6,arguments)   =>   I9{ prog -> type main ( arguments . ) { stmts }  # 
+			}
+
+goto(6,type)   =>   I8{ argument -> type . id  # 
+			}
+
+goto(6,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(7,,)   =>   I10{ argument -> . type id  # 
+			arguments -> argument , . arguments  # arguments -> . argument , arguments  # arguments -> . argument  # arguments -> .  # 
+			type -> . int  # type -> . char  # 
+			}
+
+goto(8,id)   =>   I11{ argument -> type id .  # 
+			}
+
+goto(9,))   =>   I12{ prog -> type main ( arguments ) . { stmts }  # 
+			}
+
+goto(10,argument)   =>   I7{ arguments -> argument . , arguments  # arguments -> argument .  # 
+			}
+
+goto(10,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(10,arguments)   =>   I13{ arguments -> argument , arguments .  # 
+			}
+
+goto(10,type)   =>   I8{ argument -> type . id  # 
+			}
+
+goto(10,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(12,{)   =>   I14{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			prog -> type main ( arguments ) { . stmts }  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(14,charassignmentStmt)   =>   I26{ stmt -> charassignmentStmt .  # 
+			}
+
+goto(14,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(14,for)   =>   I28{ forLoop -> for . ( id = expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(14,type)   =>   I15{ charassignmentStmt -> type . charArray = string_constant ;  # 
+			charArray -> . id [ integer_constant ]  # 
+			assignmentStmt -> type . id = expr ;  # 
+			}
+
+goto(14,put)   =>   I16{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			putStmt -> put . expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(14,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(14,get)   =>   I30{ getStmt -> get . id ;  # 
+			}
+
+goto(14,expr)   =>   I31{ conditionalStmt -> expr . ? expr : expr ;  # 
+			}
+
+goto(14,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(14,id)   =>   I17{ conditionalStmt -> id . = conditionalStmt  # 
+			factor -> id .  # 
+			assignmentStmt -> id . = expr ;  # 
+			}
+
+goto(14,putStmt)   =>   I18{ stmt -> putStmt .  # 
+			}
+
+goto(14,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(14,if)   =>   I19{ ifStmt -> if . ( expr ) { stmts } else { stmts }  # 
+			}
+
+goto(14,forLoop)   =>   I20{ stmt -> forLoop .  # 
+			}
+
+goto(14,assignmentStmt)   =>   I34{ stmt -> assignmentStmt .  # 
+			}
+
+goto(14,stmts)   =>   I21{ prog -> type main ( arguments ) { stmts . }  # 
+			}
+
+goto(14,conditionalStmt)   =>   I35{ stmt -> conditionalStmt .  # 
+			}
+
+goto(14,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(14,returnStmt)   =>   I23{ stmt -> returnStmt .  # 
+			}
+
+goto(14,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(14,ifStmt)   =>   I36{ stmt -> ifStmt .  # 
+			}
+
+goto(14,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(14,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(14,getStmt)   =>   I25{ stmt -> getStmt .  # 
+			}
+
+goto(14,{)   =>   I37{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> { . stmts }  # stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(14,stmt)   =>   I38{ stmts -> stmt . stmts  # stmts -> stmt .  # stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(15,id)   =>   I39{ charArray -> id . [ integer_constant ]  # 
+			assignmentStmt -> type id . = expr ;  # 
+			}
+
+goto(15,charArray)   =>   I40{ charassignmentStmt -> type charArray . = string_constant ;  # 
+			}
+
+goto(16,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(16,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(16,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(16,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(16,expr)   =>   I42{ putStmt -> put expr . ;  # 
+			}
+
+goto(16,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(16,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(16,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(17,=)   =>   I43{ conditionalStmt -> id = . conditionalStmt  # conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			expr -> . term expr'  # expr -> . term expr'  # 
+			term -> . factor term'  # term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> id = . expr ;  # 
+			}
+
+goto(19,()   =>   I44{ ifStmt -> if ( . expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(21,})   =>   I45{ prog -> type main ( arguments ) { stmts } .  # 
+			}
+
+goto(22,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(22,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(22,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(22,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(22,expr)   =>   I46{ factor -> ( expr . )  # 
+			}
+
+goto(22,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(22,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(22,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(28,()   =>   I47{ forLoop -> for ( . id = expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(30,id)   =>   I48{ getStmt -> get id . ;  # 
+			}
+
+goto(31,?)   =>   I49{ conditionalStmt -> expr ? . expr : expr ;  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(32,==)   =>   I51{ relop -> == .  # 
+			}
+
+goto(32,expr')   =>   I50{ expr -> term expr' .  # 
+			}
+
+goto(32,<)   =>   I52{ relop -> < .  # 
+			}
+
+goto(32,relop)   =>   I54{ expr' -> relop . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(32,>)   =>   I53{ relop -> > .  # 
+			}
+
+goto(33,term')   =>   I55{ term -> factor term' .  # 
+			}
+
+goto(33,*)   =>   I56{ arithop -> * .  # 
+			}
+
+goto(33,+)   =>   I57{ arithop -> + .  # 
+			}
+
+goto(33,-)   =>   I58{ arithop -> - .  # 
+			}
+
+goto(33,^)   =>   I59{ arithop -> ^ .  # 
+			}
+
+goto(33,arithop)   =>   I60{ term' -> arithop . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(37,charassignmentStmt)   =>   I26{ stmt -> charassignmentStmt .  # 
+			}
+
+goto(37,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(37,for)   =>   I28{ forLoop -> for . ( id = expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(37,type)   =>   I15{ charassignmentStmt -> type . charArray = string_constant ;  # 
+			charArray -> . id [ integer_constant ]  # 
+			assignmentStmt -> type . id = expr ;  # 
+			}
+
+goto(37,put)   =>   I16{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			putStmt -> put . expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(37,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(37,get)   =>   I30{ getStmt -> get . id ;  # 
+			}
+
+goto(37,expr)   =>   I31{ conditionalStmt -> expr . ? expr : expr ;  # 
+			}
+
+goto(37,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(37,id)   =>   I17{ conditionalStmt -> id . = conditionalStmt  # 
+			factor -> id .  # 
+			assignmentStmt -> id . = expr ;  # 
+			}
+
+goto(37,putStmt)   =>   I18{ stmt -> putStmt .  # 
+			}
+
+goto(37,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(37,if)   =>   I19{ ifStmt -> if . ( expr ) { stmts } else { stmts }  # 
+			}
+
+goto(37,forLoop)   =>   I20{ stmt -> forLoop .  # 
+			}
+
+goto(37,assignmentStmt)   =>   I34{ stmt -> assignmentStmt .  # 
+			}
+
+goto(37,stmts)   =>   I61{ stmt -> { stmts . }  # 
+			}
+
+goto(37,conditionalStmt)   =>   I35{ stmt -> conditionalStmt .  # 
+			}
+
+goto(37,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(37,returnStmt)   =>   I23{ stmt -> returnStmt .  # 
+			}
+
+goto(37,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(37,ifStmt)   =>   I36{ stmt -> ifStmt .  # 
+			}
+
+goto(37,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(37,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(37,getStmt)   =>   I25{ stmt -> getStmt .  # 
+			}
+
+goto(37,{)   =>   I37{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> { . stmts }  # stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(37,stmt)   =>   I38{ stmts -> stmt . stmts  # stmts -> stmt .  # stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(38,charassignmentStmt)   =>   I26{ stmt -> charassignmentStmt .  # 
+			}
+
+goto(38,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(38,for)   =>   I28{ forLoop -> for . ( id = expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(38,type)   =>   I15{ charassignmentStmt -> type . charArray = string_constant ;  # 
+			charArray -> . id [ integer_constant ]  # 
+			assignmentStmt -> type . id = expr ;  # 
+			}
+
+goto(38,put)   =>   I16{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			putStmt -> put . expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(38,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(38,get)   =>   I30{ getStmt -> get . id ;  # 
+			}
+
+goto(38,expr)   =>   I31{ conditionalStmt -> expr . ? expr : expr ;  # 
+			}
+
+goto(38,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(38,id)   =>   I17{ conditionalStmt -> id . = conditionalStmt  # 
+			factor -> id .  # 
+			assignmentStmt -> id . = expr ;  # 
+			}
+
+goto(38,putStmt)   =>   I18{ stmt -> putStmt .  # 
+			}
+
+goto(38,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(38,if)   =>   I19{ ifStmt -> if . ( expr ) { stmts } else { stmts }  # 
+			}
+
+goto(38,forLoop)   =>   I20{ stmt -> forLoop .  # 
+			}
+
+goto(38,assignmentStmt)   =>   I34{ stmt -> assignmentStmt .  # 
+			}
+
+goto(38,stmts)   =>   I62{ stmts -> stmt stmts .  # 
+			}
+
+goto(38,conditionalStmt)   =>   I35{ stmt -> conditionalStmt .  # 
+			}
+
+goto(38,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(38,returnStmt)   =>   I23{ stmt -> returnStmt .  # 
+			}
+
+goto(38,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(38,ifStmt)   =>   I36{ stmt -> ifStmt .  # 
+			}
+
+goto(38,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(38,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(38,getStmt)   =>   I25{ stmt -> getStmt .  # 
+			}
+
+goto(38,{)   =>   I37{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> { . stmts }  # stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(38,stmt)   =>   I38{ stmts -> stmt . stmts  # stmts -> stmt .  # stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(39,[)   =>   I64{ charArray -> id [ . integer_constant ]  # 
+			}
+
+goto(39,=)   =>   I63{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> type id = . expr ;  # 
+			}
+
+goto(40,=)   =>   I65{ charassignmentStmt -> type charArray = . string_constant ;  # 
+			}
+
+goto(42,;)   =>   I66{ putStmt -> put expr ; .  # 
+			}
+
+goto(43,char_constant)   =>   I71{ factor -> char_constant .  # factor -> char_constant .  # 
+			}
+
+goto(43,conditionalStmt)   =>   I75{ conditionalStmt -> id = conditionalStmt .  # 
+			}
+
+goto(43,string_constant)   =>   I69{ factor -> string_constant .  # factor -> string_constant .  # 
+			}
+
+goto(43,integer_constant)   =>   I70{ factor -> integer_constant .  # factor -> integer_constant .  # 
+			}
+
+goto(43,()   =>   I68{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(43,expr)   =>   I72{ conditionalStmt -> expr . ? expr : expr ;  # 
+			assignmentStmt -> id = expr . ;  # 
+			}
+
+goto(43,term)   =>   I73{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(43,id)   =>   I67{ conditionalStmt -> id . = conditionalStmt  # 
+			factor -> id .  # factor -> id .  # 
+			}
+
+goto(43,factor)   =>   I74{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(44,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(44,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(44,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(44,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(44,expr)   =>   I76{ ifStmt -> if ( expr . ) { stmts } else { stmts }  # 
+			}
+
+goto(44,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(44,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(44,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(46,))   =>   I77{ factor -> ( expr ) .  # 
+			}
+
+goto(47,id)   =>   I78{ forLoop -> for ( id . = expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(48,;)   =>   I79{ getStmt -> get id ; .  # 
+			}
+
+goto(49,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(49,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(49,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(49,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(49,expr)   =>   I80{ conditionalStmt -> expr ? expr . : expr ;  # 
+			}
+
+goto(49,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(49,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(49,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(54,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(54,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(54,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(54,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(54,term)   =>   I81{ expr' -> relop term . expr'  # expr' -> . relop term expr'  # expr' -> .  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(54,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(54,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(60,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(60,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(60,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(60,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(60,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(60,factor)   =>   I82{ term' -> arithop factor . term'  # term' -> . arithop factor term'  # term' -> .  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(61,})   =>   I83{ stmt -> { stmts } .  # 
+			}
+
+goto(63,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(63,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(63,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(63,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(63,expr)   =>   I84{ assignmentStmt -> type id = expr . ;  # 
+			}
+
+goto(63,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(63,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(63,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(64,integer_constant)   =>   I85{ charArray -> id [ integer_constant . ]  # 
+			}
+
+goto(65,string_constant)   =>   I86{ charassignmentStmt -> type charArray = string_constant . ;  # 
+			}
+
+goto(67,=)   =>   I87{ conditionalStmt -> id = . conditionalStmt  # conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(68,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(68,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(68,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(68,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(68,expr)   =>   I88{ factor -> ( expr . )  # factor -> ( expr . )  # 
+			}
+
+goto(68,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(68,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(68,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(72,;)   =>   I89{ assignmentStmt -> id = expr ; .  # 
+			}
+
+goto(72,?)   =>   I49{ conditionalStmt -> expr ? . expr : expr ;  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(73,==)   =>   I51{ relop -> == .  # 
+			}
+
+goto(73,expr')   =>   I90{ expr -> term expr' .  # expr -> term expr' .  # 
+			}
+
+goto(73,<)   =>   I52{ relop -> < .  # 
+			}
+
+goto(73,relop)   =>   I54{ expr' -> relop . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(73,>)   =>   I53{ relop -> > .  # 
+			}
+
+goto(74,term')   =>   I91{ term -> factor term' .  # term -> factor term' .  # 
+			}
+
+goto(74,*)   =>   I56{ arithop -> * .  # 
+			}
+
+goto(74,+)   =>   I57{ arithop -> + .  # 
+			}
+
+goto(74,-)   =>   I58{ arithop -> - .  # 
+			}
+
+goto(74,^)   =>   I59{ arithop -> ^ .  # 
+			}
+
+goto(74,arithop)   =>   I60{ term' -> arithop . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(76,))   =>   I92{ ifStmt -> if ( expr ) . { stmts } else { stmts }  # 
+			}
+
+goto(78,=)   =>   I93{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			forLoop -> for ( id = . expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(80,:)   =>   I94{ conditionalStmt -> expr ? expr : . expr ;  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(81,==)   =>   I51{ relop -> == .  # 
+			}
+
+goto(81,expr')   =>   I95{ expr' -> relop term expr' .  # 
+			}
+
+goto(81,<)   =>   I52{ relop -> < .  # 
+			}
+
+goto(81,relop)   =>   I54{ expr' -> relop . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(81,>)   =>   I53{ relop -> > .  # 
+			}
+
+goto(82,term')   =>   I96{ term' -> arithop factor term' .  # 
+			}
+
+goto(82,*)   =>   I56{ arithop -> * .  # 
+			}
+
+goto(82,+)   =>   I57{ arithop -> + .  # 
+			}
+
+goto(82,-)   =>   I58{ arithop -> - .  # 
+			}
+
+goto(82,^)   =>   I59{ arithop -> ^ .  # 
+			}
+
+goto(82,arithop)   =>   I60{ term' -> arithop . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(84,;)   =>   I97{ assignmentStmt -> type id = expr ; .  # 
+			}
+
+goto(85,])   =>   I98{ charArray -> id [ integer_constant ] .  # 
+			}
+
+goto(86,;)   =>   I99{ charassignmentStmt -> type charArray = string_constant ; .  # 
+			}
+
+goto(87,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(87,conditionalStmt)   =>   I75{ conditionalStmt -> id = conditionalStmt .  # 
+			}
+
+goto(87,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(87,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(87,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(87,expr)   =>   I31{ conditionalStmt -> expr . ? expr : expr ;  # 
+			}
+
+goto(87,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(87,id)   =>   I100{ conditionalStmt -> id . = conditionalStmt  # 
+			factor -> id .  # 
+			}
+
+goto(87,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(88,))   =>   I101{ factor -> ( expr ) .  # factor -> ( expr ) .  # 
+			}
+
+goto(92,{)   =>   I102{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> if ( expr ) { . stmts } else { stmts }  # ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(93,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(93,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(93,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(93,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(93,expr)   =>   I103{ forLoop -> for ( id = expr . ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(93,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(93,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(93,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(94,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(94,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(94,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(94,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(94,expr)   =>   I104{ conditionalStmt -> expr ? expr : expr . ;  # 
+			}
+
+goto(94,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(94,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(94,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(100,=)   =>   I87{ conditionalStmt -> id = . conditionalStmt  # conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(102,charassignmentStmt)   =>   I26{ stmt -> charassignmentStmt .  # 
+			}
+
+goto(102,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(102,for)   =>   I28{ forLoop -> for . ( id = expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(102,type)   =>   I15{ charassignmentStmt -> type . charArray = string_constant ;  # 
+			charArray -> . id [ integer_constant ]  # 
+			assignmentStmt -> type . id = expr ;  # 
+			}
+
+goto(102,put)   =>   I16{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			putStmt -> put . expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(102,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(102,get)   =>   I30{ getStmt -> get . id ;  # 
+			}
+
+goto(102,expr)   =>   I31{ conditionalStmt -> expr . ? expr : expr ;  # 
+			}
+
+goto(102,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(102,id)   =>   I17{ conditionalStmt -> id . = conditionalStmt  # 
+			factor -> id .  # 
+			assignmentStmt -> id . = expr ;  # 
+			}
+
+goto(102,putStmt)   =>   I18{ stmt -> putStmt .  # 
+			}
+
+goto(102,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(102,if)   =>   I19{ ifStmt -> if . ( expr ) { stmts } else { stmts }  # 
+			}
+
+goto(102,forLoop)   =>   I20{ stmt -> forLoop .  # 
+			}
+
+goto(102,assignmentStmt)   =>   I34{ stmt -> assignmentStmt .  # 
+			}
+
+goto(102,stmts)   =>   I105{ ifStmt -> if ( expr ) { stmts . } else { stmts }  # 
+			}
+
+goto(102,conditionalStmt)   =>   I35{ stmt -> conditionalStmt .  # 
+			}
+
+goto(102,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(102,returnStmt)   =>   I23{ stmt -> returnStmt .  # 
+			}
+
+goto(102,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(102,ifStmt)   =>   I36{ stmt -> ifStmt .  # 
+			}
+
+goto(102,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(102,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(102,getStmt)   =>   I25{ stmt -> getStmt .  # 
+			}
+
+goto(102,{)   =>   I37{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> { . stmts }  # stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(102,stmt)   =>   I38{ stmts -> stmt . stmts  # stmts -> stmt .  # stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(103,;)   =>   I106{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			forLoop -> for ( id = expr ; . expr ; id = expr ) { stmts }  # 
+			}
+
+goto(104,;)   =>   I107{ conditionalStmt -> expr ? expr : expr ; .  # 
+			}
+
+goto(105,})   =>   I108{ ifStmt -> if ( expr ) { stmts } . else { stmts }  # 
+			}
+
+goto(106,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(106,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(106,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(106,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(106,expr)   =>   I109{ forLoop -> for ( id = expr ; expr . ; id = expr ) { stmts }  # 
+			}
+
+goto(106,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(106,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(106,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(108,else)   =>   I110{ ifStmt -> if ( expr ) { stmts } else . { stmts }  # 
+			}
+
+goto(109,;)   =>   I111{ forLoop -> for ( id = expr ; expr ; . id = expr ) { stmts }  # 
+			}
+
+goto(110,{)   =>   I112{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> if ( expr ) { stmts } else { . stmts }  # ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(111,id)   =>   I113{ forLoop -> for ( id = expr ; expr ; id . = expr ) { stmts }  # 
+			}
+
+goto(112,charassignmentStmt)   =>   I26{ stmt -> charassignmentStmt .  # 
+			}
+
+goto(112,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(112,for)   =>   I28{ forLoop -> for . ( id = expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(112,type)   =>   I15{ charassignmentStmt -> type . charArray = string_constant ;  # 
+			charArray -> . id [ integer_constant ]  # 
+			assignmentStmt -> type . id = expr ;  # 
+			}
+
+goto(112,put)   =>   I16{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			putStmt -> put . expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(112,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(112,get)   =>   I30{ getStmt -> get . id ;  # 
+			}
+
+goto(112,expr)   =>   I31{ conditionalStmt -> expr . ? expr : expr ;  # 
+			}
+
+goto(112,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(112,id)   =>   I17{ conditionalStmt -> id . = conditionalStmt  # 
+			factor -> id .  # 
+			assignmentStmt -> id . = expr ;  # 
+			}
+
+goto(112,putStmt)   =>   I18{ stmt -> putStmt .  # 
+			}
+
+goto(112,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(112,if)   =>   I19{ ifStmt -> if . ( expr ) { stmts } else { stmts }  # 
+			}
+
+goto(112,forLoop)   =>   I20{ stmt -> forLoop .  # 
+			}
+
+goto(112,assignmentStmt)   =>   I34{ stmt -> assignmentStmt .  # 
+			}
+
+goto(112,stmts)   =>   I114{ ifStmt -> if ( expr ) { stmts } else { stmts . }  # 
+			}
+
+goto(112,conditionalStmt)   =>   I35{ stmt -> conditionalStmt .  # 
+			}
+
+goto(112,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(112,returnStmt)   =>   I23{ stmt -> returnStmt .  # 
+			}
+
+goto(112,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(112,ifStmt)   =>   I36{ stmt -> ifStmt .  # 
+			}
+
+goto(112,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(112,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(112,getStmt)   =>   I25{ stmt -> getStmt .  # 
+			}
+
+goto(112,{)   =>   I37{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> { . stmts }  # stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(112,stmt)   =>   I38{ stmts -> stmt . stmts  # stmts -> stmt .  # stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(113,=)   =>   I115{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			forLoop -> for ( id = expr ; expr ; id = . expr ) { stmts }  # 
+			}
+
+goto(114,})   =>   I116{ ifStmt -> if ( expr ) { stmts } else { stmts } .  # 
+			}
+
+goto(115,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(115,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(115,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(115,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(115,expr)   =>   I117{ forLoop -> for ( id = expr ; expr ; id = expr . ) { stmts }  # 
+			}
+
+goto(115,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(115,id)   =>   I41{ factor -> id .  # 
+			}
+
+goto(115,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(117,))   =>   I118{ forLoop -> for ( id = expr ; expr ; id = expr ) . { stmts }  # 
+			}
+
+goto(118,{)   =>   I119{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			forLoop -> for ( id = expr ; expr ; id = expr ) { . stmts }  # forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(119,charassignmentStmt)   =>   I26{ stmt -> charassignmentStmt .  # 
+			}
+
+goto(119,integer_constant)   =>   I27{ factor -> integer_constant .  # 
+			}
+
+goto(119,for)   =>   I28{ forLoop -> for . ( id = expr ; expr ; id = expr ) { stmts }  # 
+			}
+
+goto(119,type)   =>   I15{ charassignmentStmt -> type . charArray = string_constant ;  # 
+			charArray -> . id [ integer_constant ]  # 
+			assignmentStmt -> type . id = expr ;  # 
+			}
+
+goto(119,put)   =>   I16{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			putStmt -> put . expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(119,char_constant)   =>   I29{ factor -> char_constant .  # 
+			}
+
+goto(119,get)   =>   I30{ getStmt -> get . id ;  # 
+			}
+
+goto(119,expr)   =>   I31{ conditionalStmt -> expr . ? expr : expr ;  # 
+			}
+
+goto(119,term)   =>   I32{ expr' -> . relop term expr'  # expr' -> .  # 
+			expr -> term . expr'  # 
+			relop -> . <  # relop -> . >  # relop -> . ==  # 
+			}
+
+goto(119,id)   =>   I17{ conditionalStmt -> id . = conditionalStmt  # 
+			factor -> id .  # 
+			assignmentStmt -> id . = expr ;  # 
+			}
+
+goto(119,putStmt)   =>   I18{ stmt -> putStmt .  # 
+			}
+
+goto(119,factor)   =>   I33{ term' -> . arithop factor term'  # term' -> .  # 
+			term -> factor . term'  # 
+			arithop -> . +  # arithop -> . -  # arithop -> . *  # arithop -> . ^  # 
+			}
+
+goto(119,if)   =>   I19{ ifStmt -> if . ( expr ) { stmts } else { stmts }  # 
+			}
+
+goto(119,forLoop)   =>   I20{ stmt -> forLoop .  # 
+			}
+
+goto(119,assignmentStmt)   =>   I34{ stmt -> assignmentStmt .  # 
+			}
+
+goto(119,stmts)   =>   I120{ forLoop -> for ( id = expr ; expr ; id = expr ) { stmts . }  # 
+			}
+
+goto(119,conditionalStmt)   =>   I35{ stmt -> conditionalStmt .  # 
+			}
+
+goto(119,()   =>   I22{ expr -> . term expr'  # 
+			term -> . factor term'  # 
+			factor -> ( . expr )  # factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			}
+
+goto(119,returnStmt)   =>   I23{ stmt -> returnStmt .  # 
+			}
+
+goto(119,int)   =>   I2{ type -> int .  # 
+			}
+
+goto(119,ifStmt)   =>   I36{ stmt -> ifStmt .  # 
+			}
+
+goto(119,string_constant)   =>   I24{ factor -> string_constant .  # 
+			}
+
+goto(119,char)   =>   I4{ type -> char .  # 
+			}
+
+goto(119,getStmt)   =>   I25{ stmt -> getStmt .  # 
+			}
+
+goto(119,{)   =>   I37{ stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> { . stmts }  # stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(119,stmt)   =>   I38{ stmts -> stmt . stmts  # stmts -> stmt .  # stmts -> . stmt stmts  # stmts -> . stmt  # 
+			charassignmentStmt -> . type charArray = string_constant ;  # 
+			conditionalStmt -> . id = conditionalStmt  # conditionalStmt -> . expr ? expr : expr ;  # 
+			type -> . int  # type -> . char  # 
+			ifStmt -> . if ( expr ) { stmts } else { stmts }  # 
+			expr -> . term expr'  # 
+			term -> . factor term'  # 
+			getStmt -> . get id ;  # 
+			putStmt -> . put expr ;  # 
+			factor -> . id  # factor -> . integer_constant  # factor -> . char_constant  # factor -> . string_constant  # factor -> . ( expr )  # 
+			assignmentStmt -> . type id = expr ;  # assignmentStmt -> . id = expr ;  # 
+			forLoop -> . for ( id = expr ; expr ; id = expr ) { stmts }  # 
+			stmt -> . assignmentStmt  # stmt -> . charassignmentStmt  # stmt -> . returnStmt  # stmt -> . conditionalStmt  # stmt -> . getStmt  # stmt -> . putStmt  # stmt -> . forLoop  # stmt -> . ifStmt  # stmt -> . { stmts }  # 
+			}
+
+goto(120,})   =>   I121{ forLoop -> for ( id = expr ; expr ; id = expr ) { stmts } .  # 
+			}
+
